@@ -30,10 +30,39 @@ int main(int argc, char** argv)
     std::cout<<"HERRO, THIS IS DATA STRUCTURE COURSE 1"<<std::endl;
     std::cout<<"WHICH IS ON DYNAMIC ARRAY"<<std::endl;
     
-    dynarray<int> dyn_array_a(12);
+    dynarray<double> dyn_array_a(12);
     std::cout<<dyn_array_a.size()<<std::endl;
+    std::cout<<dyn_array_a.isEmpty()<<std::endl;
 
-    std::cout<<"END"<<std::endl<<std::endl;;
+    std::cout<<std::endl<<"SET VALUES"<<std::endl;
+
+    for(int i = 0; i < 12; i++) 
+    {
+        dyn_array_a.set_value(i,i);
+        std::cout<<dyn_array_a.access(i)<<std::endl;
+    }
+
+    std::cout<<"SET VALUES END"<<std::endl<<std::endl;
+
+
+    dyn_array_a.emplace_back(100000);
+    // dyn_array_a.push_back(500000);
+        std::cout<<std::endl<<"hiii"<<std::endl;
+
+    std::cout<<std::endl<<"hiii"<<std::endl;
+
+    std::cout<<std::endl<<"hiii"<<std::endl;
+
+    std::cout<<std::endl<<"hiii"<<std::endl;
+
+    std::cout<<std::endl<<"hiii"<<std::endl;
+
+    dyn_array_a.pop_back();
+
+    std::cout<<std::endl<<"hiii"<<std::endl;
+
+    for(int i = 0; i < dyn_array_a.size(); i++) 
+        std::cout<<dyn_array_a.access(i)<<std::endl;
 
     return 0;
 }
