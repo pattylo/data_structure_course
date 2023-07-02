@@ -23,7 +23,7 @@
  * \brief On dynamic array implementation
  */
 
-#include "../include/dynarray.hpp"
+#include "../include/lecture2_dyn_array.hpp"
 
 int main(int argc, char** argv)
 {
