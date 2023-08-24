@@ -72,6 +72,7 @@ int main(int argv, char** argc)
     std::weak_ptr<Entity> elalaa;
     {
         std::shared_ptr<Entity> sharedEntity = std::make_shared<Entity>();
+        // sharedEntity.
         elalaa = sharedEntity;
     }
     std::cout<<"LEAVE WEAK_PTR BLOCK"<<std::endl;
